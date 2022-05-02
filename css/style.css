@@ -1,91 +1,224 @@
-body{
-    height: 100vh;
-    /* background-image: linear-gradient(rgb(116, 240, 158), rgb(3, 167, 25)); */
-    /* background-image: url(https://cutewallpaper.org/21/technology-wallpapers/Black-Technology-Wallpapers-Epic-Wallpaperz.jpg); */
-    background-image: url(https://wallpaperboat.com/wp-content/uploads/2019/05/tech-27.jpg);
-    /* overflow: hidden; */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
-.logo{
-    display: block;
-    margin: auto;
-    width: 8rem;
-    height: 6rem;
-}
-h1{
-    margin-top: 12px;
-    font-size: 30px;
-    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-    font-family: 'Baloo Bhai 2', cursive;
-    text-align: center;
-    color: #cbcfa2;
-}
-.container{
-    max-width: 955px;
-    background-color: black;
-    border: 4px solid rgb(129 0 7);
-    border-radius: 13px;
-    margin: auto;
-    height: 60vh;
-    padding: 33px;
-    overflow-y: auto;
-    margin-bottom: 23px;
+body {
+  background: linear-gradient(0deg, rgb(0 1 15) 0%, rgb(1 6 66) 100%);
+  height: 100vh;
+  overflow: hidden;
 }
 
-.message{
-    /* background-color: rgb(221 255 105); */
-    background-color: rgb(22 21 26);
-    width: 24%;
-    padding: 10px;
-    margin: 17px 12px;
-    border: 2px solid black;
-    border-radius: 10px;
-    font-family: serif;
-    font-weight: bold;
-    color: #cbcfa2;
+h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-family: "Baloo Bhai 2", cursive;
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 0.05em #fff, 0 0 0.2em #000c58, 0 0 0.3em #027efb;
 }
-.left{
-    float: left;
-    clear:both;
+.container::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
-.right{
-    float: right;
-    clear:both;
+
+.container {
+  width: 80vw;
+  border: 1.5px solid rgba(2, 126, 251, 1);
+  border-radius: 5px;
+  background-color: rgb(0 3 35);
+  box-shadow: 0 0 1rem 0 rgb(70, 70, 69);
+  margin: auto;
+  height: 70vh;
+  overflow-y: auto;
+  margin-bottom: 23px;
 }
 
-#send-container{
-    display:block;
-    margin: auto;
-    text-align: center;
-    max-width: 1085px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#messageInp{
-    width: 80%;
-    border: 2px solid black;
-    border-radius: 6px;
-    height: 34px;
-    font-size: 22px;
-    font-family: serif;
+.message {
+  background: rgb(0, 172, 238);
+  background: linear-gradient(0deg,
+      rgba(0, 172, 238, 1) 0%,
+      rgba(2, 126, 251, 1) 100%);
+  width: 25vw;
+  padding: 10px;
+  margin: 17px 12px;
+  border-radius: 5px;
+  /* font-size: 2vw; */
+  font-family: serif;
+  font-weight: bold;
+  color: rgb(1 6 66);
+  box-shadow: 0 0 5px 0 rgb(70, 70, 69);
 }
 
-.btn{
-    background-color: rgb(129 0 7);
-    color: white;
-    margin: 0 5px;
-    width: 9%;
-    cursor: pointer;
-    border: 2px solid black;
-    border-radius: 6px;
-    height: 34px;
-}
-.btn:hover{
-    background-color: #8d8d8d;
-    color: rgb(22 21 26);
-    font-weight: bold;
+.left {
+  float: left;
+  clear: both;
+  background: white;
 }
 
+.right {
+  float: right;
+  clear: both;
+}
+
+#send-container {
+  display: block;
+  margin: auto;
+  text-align: center;
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#messageInp {
+  width: 70%;
+  height: 40px;
+  font-size: 18px;
+  font-family: serif;
+}
+
+button {
+  margin: 20px;
+}
+
+.custombtn {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 120px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-weight: 500;
+  font-size: 1rem;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.btn {
+  background: rgb(0, 172, 238);
+  background: linear-gradient(0deg,
+      rgba(0, 172, 238, 1) 0%,
+      rgba(2, 126, 251, 1) 100%);
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+
+.btn span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.btn:before,
+.btn:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  background: rgba(2, 126, 251, 1);
+  transition: all 0.5s ease;
+}
+
+.btn:before {
+  height: 0%;
+  width: 2px;
+}
+
+.btn:after {
+  width: 0%;
+  height: 2px;
+}
+
+.btn:hover {
+  background: transparent;
+  box-shadow: none;
+}
+
+.btn:hover:before {
+  height: 100%;
+}
+
+.btn:hover:after {
+  width: 100%;
+}
+
+.btn span:hover {
+  color: rgba(2, 126, 251, 1);
+}
+
+.btn span:before,
+.btn span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  background: rgba(2, 126, 251, 1);
+  transition: all 0.5s ease;
+}
+
+.btn span:before {
+  width: 2px;
+  height: 0%;
+}
+
+.btn span:after {
+  width: 0%;
+  height: 2px;
+}
+
+.btn span:hover:before {
+  height: 100%;
+}
+
+.btn span:hover:after {
+  width: 100%;
+}
+
+input[type="text"] {
+  margin-top: 2rem;
+  border: none;
+  background: #000323;
+  margin: 0;
+  padding: 7px 8px;
+  font-size: 14px;
+  color: white;
+  border: 1.5px solid rgba(2, 126, 251, 1);
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 rgb(70, 70, 69);
+}
+
+input[type="text"]::placeholder {
+  color: rgb(123, 123, 123);
+}
+
+input[type="text"]:focus {
+  box-shadow: 0 0 1rem 0 rgb(70, 70, 69);
+  border-color: rgba(2, 126, 251, 1);
+  outline: none;
+}
+
+input[type="text"]::-webkit-inner-spin-button,
+input[type="text"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
